@@ -7,7 +7,7 @@ MarketPlaceApi::Application.routes.draw do
                               constraints: { subdomain: 'api' }, path: '/'  do
     scope module: :v1 do
       # We are going to list our resources here
-      resources :users, :only => [:show, :create]
+      resources :users, :only => [:show, :create, :update]
     end
   end
 end
