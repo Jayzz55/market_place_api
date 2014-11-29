@@ -15,7 +15,7 @@ describe User do
 end
 
 describe "when email is not present" do
-  before { @user = FactoryGirl.build(:user, email: '') }
+  before { @user = FactoryGirl.build(:user, email: nil) }
 
   subject { @user }
 
