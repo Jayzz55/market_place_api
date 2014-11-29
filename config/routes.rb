@@ -1,3 +1,5 @@
+require 'api_constraints'
+
 MarketPlaceApi::Application.routes.draw do
   devise_for :users
   # Api definition
