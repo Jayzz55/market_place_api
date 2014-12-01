@@ -47,3 +47,5 @@ group :test do
   gem "rspec-rails"
   gem "shoulda-matchers"
 end
+
+gem 'active_model_serializers'
