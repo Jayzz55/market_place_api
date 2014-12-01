@@ -3,11 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-group :development do
-  gem 'sqlite3'
-end
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -31,13 +26,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :test do
-  gem "rspec-rails"
-  gem "factory_girl_rails"
-  gem 'ffaker'
-  gem "shoulda-matchers"
-end
-
 gem 'figaro'
 gem "devise"
 gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
@@ -45,3 +33,17 @@ gem 'compass-rails'
 gem 'furatto'
 gem 'font-awesome-rails'
 gem 'simple_form'
+
+group :development do
+  gem 'sqlite3'
+end
+
+group :development, :test do
+  gem "factory_girl_rails"
+  gem 'ffaker'
+end
+
+group :test do
+  gem "rspec-rails"
+  gem "shoulda-matchers"
+end
